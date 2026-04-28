@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Navbar, Nav, NavDropdown, Container, Alert } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import '../App.css';
 
 function MyNavBar() {
   const [showNotice, setShowNotice] = useState(false);
@@ -15,7 +16,7 @@ function MyNavBar() {
 
   return (
     <>
-      <Navbar bg="primary" variant="dark" expand="lg">
+      <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
         <Container fluid>
           <Navbar.Brand as={NavLink} to="/home">
             <i className="bi bi-box-fill"></i> Mini-app
@@ -25,7 +26,7 @@ function MyNavBar() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={NavLink} to="/home">
+              <Nav.Link as={NavLink} to="/" end>
                 Home
               </Nav.Link>
 

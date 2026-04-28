@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col, Card, Accordion, Alert } from "react-bootstrap";
+import '../App.css';
 
 function Home() {
   const [showNotice, setShowNotice] = useState(false);
