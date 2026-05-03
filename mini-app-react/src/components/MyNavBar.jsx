@@ -26,7 +26,7 @@ function MyNavBar() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={NavLink} to="/" end>
+              <Nav.Link as={NavLink} to="/">
                 Home
               </Nav.Link>
 
